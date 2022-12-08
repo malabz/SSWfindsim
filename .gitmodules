@@ -1,0 +1,6 @@
+[submodule "getopt9"]
+	path = lib/getopt9
+	url = git@github.com:wym6912/getopt9.git
+[submodule "SSW"]
+	path = lib/ssw
+	url = git@github.com:wym6912/SSW.git
