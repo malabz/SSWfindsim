@@ -23,7 +23,7 @@ This project is based on https://github.com/mengyao/Complete-Striped-Smith-Water
 - * `query_begin`, `query_end`, which means the place of center sequence;
 - * `target_begin`, `target_end`, which means the place of query sequence;
 - * `score`, SW score;
-- * `alignment_list`, which print the sequence alignment ways: `I` insert, `D` delete and `M` match.
-- The order of line is: `sequence_id query_begin query_end target_begin target_end score alignment list`.
+- * `alignment_list (cigar)`, which print the sequence alignment ways, following the CIGAR operations (http://samtools.github.io/hts-specs/SAMv1.pdf).
+- The order of line is: `sequence_id query_begin query_end target_begin target_end score alignment_list`.
 - * Sample: find the similarity of target sequence `AAAATC` and query sequence `AAAAATC` with treated them as `DNA` sequences:
-- * Will print `0 1 6 0 5 12 M6`.
+- * Will print `0 1 6 0 5 12 6M`.

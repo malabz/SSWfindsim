@@ -147,8 +147,8 @@ void alignmentout(s_align* align, FILE *filename, int number)
 		int32_t c = 0;
 		for (; c < align->cigarLen; ++c)
 		{
-			fputc(cigar_int_to_op(align->cigar[c]), filename);
 			fprintf(filename, "%d", cigar_int_to_len(align->cigar[c]));
+			fputc(cigar_int_to_op(align->cigar[c]), filename);
 		}
 	}
 	fputc('\n', filename);
